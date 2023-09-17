@@ -1,0 +1,1 @@
+This repository contains a collection of C programs and scripts that are simple introductory examples for getting started with C programming. The programs cover the basics of compiling and running C code and serve as a foundation for more complex C projects.

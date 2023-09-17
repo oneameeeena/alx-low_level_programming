@@ -1,0 +1,1 @@
+This repository contains a collection of shell scripts and examples related to shell variables and expansions in Unix-based systems. These scripts cover a range of topics, including variable assignments, environment variables, and different types of expansions used in shell scripting.

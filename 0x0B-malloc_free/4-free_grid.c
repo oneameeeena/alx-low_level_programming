@@ -1,38 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h>
 
+#include "main.h"
 /**
- * main - adds positive numbers
- * @argc: number of arguments
- * @argv: array of arguments
+ * free_grid - frees 2d array
+ * @grid: 2d grid
+ * @height: height
  *
- * Return: 0 (Success), 1 (Error)
+ * Return: void (return to nothing)
+ *
  */
-int main(int argc, char *argv[])
+void free_grid(int **grid, int height)
 {
-	int i, num, sum = 0;
+	int i;
 
-	if (argc == 1)
+	for (i = 0; i < height; i++)
 	{
-		printf("0\n");
-		return (0);
+		free(grid[i]);
 	}
-
-	for (i = 1; i < argc; i++)
-	{
-		for (num = 0; argv[i][num] != '\0'; num++)
-		{
-			if (argv[i][num] < '0' || argv[i][num] > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-
-		sum += atoi(argv[i]);
-	}
-
-	printf("%d\n", sum);
-
-	return (0);
+	free(grid);
 }

@@ -1,1 +1,0 @@
-This directory contains C programs and files related to the concept of recursion. Recursion is a fundamental programming technique where a function calls itself to solve a problem. In this directory, we explore various aspects of recursion, from simple recursive functions to more complex applications.

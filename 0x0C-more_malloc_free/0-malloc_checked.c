@@ -1,23 +1,20 @@
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
+
 /**
- * create_array - create array of size size and assign char c
- * @size: size of array
- * @c: assigne char
+ * *malloc_checked - fonction to allocate Mermory
+ * @b: int bytes allocate
  *
- * Return: pointer to array, NULL if fail
- *
+ * Return: dispaly adresse allocat
  */
-char *create_array(unsigned int size, char c)
+void *malloc_checked(unsigned int b)
 {
-	char *str;
-	unsigned int i;
+	void *ptr;
 
-	str = malloc(sizeof(char) * size);
-	if (size == 0 || str == NULL)
-		return (NULL);
+	ptr = malloc(b);
 
-	for (i = 0; i < size; i++)
-		str[i] = c;
-	return (str);
+	if (ptr == NULL)
+		exit(98);
+
+	return (ptr);
 }

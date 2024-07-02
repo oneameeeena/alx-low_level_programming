@@ -1,1 +1,1 @@
-     README: 0x17-doubly_linked_lists
+This project involves working with doubly linked lists in C programming.
